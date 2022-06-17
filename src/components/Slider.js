@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { SliderData } from "../data/SliderData";
 import "../style/Slider.css";
-import { BsArrowRightCircle, BsArrowLeftCircle } from "react-icons/bs";
+import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 const Slider = () => {
   const [current, setCurrent] = useState(0);
   const length = SliderData.length;
@@ -11,7 +11,7 @@ const Slider = () => {
     const nextSlide = () => {
       setCurrent((current) => (current === length - 1 ? 0 : current + 1));
     };
-    timeout.current = setTimeout(nextSlide, 5000);
+    timeout.current = setTimeout(nextSlide, 3000);
     return function () {
       if (timeout.current) {
         clearInterval(timeout.current);
@@ -49,8 +49,8 @@ const Slider = () => {
         ))}
       </div>
       <div className="btn_container">
-        <BsArrowLeftCircle className="arrow_btn" onClick={prevSlide} />
-        <BsArrowRightCircle className="arrow_btn" onClick={nextSlide} />
+        <MdKeyboardArrowLeft className="arrow_btn_left" onClick={prevSlide} />
+        <MdKeyboardArrowRight className="arrow_btn_right" onClick={nextSlide} />
       </div>
     </div>
   );

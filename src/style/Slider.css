@@ -1,6 +1,6 @@
 .slider_container {
-  width: 100vw;
   position: relative;
+  width: 100vw;
 }
 .slider_wrapper {
   width: 100%;
@@ -8,7 +8,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 .slide {
   z-index: 1;
@@ -38,19 +37,34 @@
   transform: scale(1.05);
 }
 .btn_container {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 10;
-  width: 100%;
+  position: relative;
+  height: 100%;
 }
-.arrow_btn {
-  width: 50px;
-  height: 50px;
-  color: #000;
-  cursor: pointer;
-  padding: 10px;
-  user-select: none;
-  transition: 0.3s;
+.arrow_btn_left {
+  left: 0;
+}
+.arrow_btn_right {
+  right: 0;
+}
+.btn_container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+  font-size: 0;
+  z-index: 12;
+}
+.arrow_btn_left,
+.arrow_btn_right {
+  position: absolute;
+  top: 60%;
+  width: 10%;
+  height: 13vh;
+  display: block;
+}
+.arrow_btn_left:hover,
+.arrow_btn_right:hover {
+  opacity: 1;
+  transform: scale(1.5);
+  transition: opacity 0.5s ease;
 }
