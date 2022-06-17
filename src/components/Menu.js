@@ -6,8 +6,10 @@ const Menu = () => {
   return (
     <div className="menu_container">
       <div className="menu_items">
-        {MenuData.map((item) => (
-          <Link className="menu_item">{item.title}</Link>
+        {MenuData.map((item, index) => (
+          <Link to="/" key={index} className="menu_item">
+            {item.title}
+          </Link>
         ))}
       </div>
     </div>

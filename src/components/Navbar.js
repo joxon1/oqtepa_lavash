@@ -14,13 +14,15 @@ const Navbar = () => {
         <span className="bar"></span>
         <span className="bar"></span>
       </div>
-      <Link className="navbar_logo" id="logo_border">
+      <Link to="/" className="navbar_logo" id="logo_border">
         <img src={logo} alt="Oq-Tepa Lavash" className="navbar_logo" />
       </Link>
       <div className="navbar_header">
         <div className="navbar_links">
-          {NavbarData.map((item) => (
-            <Link className="navbar_link">{item.title}</Link>
+          {NavbarData.map((item, index) => (
+            <Link key={index} to="/" className="navbar_link">
+              {item.title}
+            </Link>
           ))}
         </div>
         <div className="navbar_number">
