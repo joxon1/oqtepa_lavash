@@ -7,24 +7,30 @@
   position: relative;
   color: black;
   border-bottom: 1px solid #e6e6e6;
+  background: #fff;
 }
 .navbar_logo {
   height: 100%;
   padding-left: 1rem;
+  background: #fff;
 }
 .navbar_header {
   width: 1000px;
   display: flex;
   justify-content: space-between;
+  background: #fff;
 }
 .navbar_link {
   text-decoration: none;
   padding: 0rem 1rem;
+  background: #fff;
 }
 .navbar_link:hover {
   border-bottom: 2px solid red;
 }
-
+.navbar_number {
+  background: #fff;
+}
 @media screen and (max-width: 1350px) {
   body.active {
     overflow-y: hidden;

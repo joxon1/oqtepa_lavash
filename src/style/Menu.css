@@ -6,13 +6,14 @@
   padding: 0.5rem calc((100vw - 1300px) / 2);
   position: sticky;
   top: 0;
-  z-index: 9;
+  z-index: 20;
   background-color: #fff;
   padding: 15px 0;
   overflow-x: hidden;
 }
 .menu_items {
   overflow-x: hidden;
+  background-color: #fff;
 }
 .menu_item {
   font-size: 15px;
@@ -23,6 +24,7 @@
   border-radius: 35px;
   text-decoration: none;
   color: #2e2e33;
+  background-color: #fff;
 }
 .menu_item:focus,
 .menu_item:hover {

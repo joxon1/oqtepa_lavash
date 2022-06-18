@@ -26,7 +26,7 @@ const Navbar = () => {
           ))}
         </div>
         <div className="navbar_number">
-          <BsFillTelephoneFill />
+          <BsFillTelephoneFill style={{ background: "#fff" }} />
           +998(78)150-00-30
         </div>
       </div>
