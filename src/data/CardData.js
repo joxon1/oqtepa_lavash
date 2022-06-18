@@ -33,11 +33,42 @@ import bigChizburger from "../assets/burger_img/bigChiz.jfif";
 import shaurma from "../assets/burger_img/shaurma.jfif";
 import bigDoner from "../assets/burger_img/bigDoner.jfif";
 
-import xalapenyoHotdog from "../assets/hotdog_img/xalapenyoHotdog.jfif"
-import pishloqliHotdog from "../assets/hotdog_img/pishloqliHotdog.jfif"
-import hotdog from "../assets/hotdog_img/hotdog.jfif"
-import shoxonaHotdog from "../assets/hotdog_img/shohonaHotdog.jfif"
+import xalapenyoHotdog from "../assets/hotdog_img/xalapenyoHotdog.jfif";
+import pishloqliHotdog from "../assets/hotdog_img/pishloqliHotdog.jfif";
+import hotdog from "../assets/hotdog_img/hotdog.jfif";
+import shoxonaHotdog from "../assets/hotdog_img/shohonaHotdog.jfif";
 
+import non from "../assets/snek_img/non.jfif";
+import fri from "../assets/snek_img/fri.jfif";
+import jaydari from "../assets/snek_img/jaydari.jfif";
+
+import mujskoyKapriz from "../assets/salat_img/mujskoyKapriz.jfif";
+import sezar from "../assets/salat_img/Sezar.jfif";
+
+import pepsi04 from "../assets/pepsi_img/04.jfif";
+import pepsi05 from "../assets/pepsi_img/05.jfif";
+import pepsi15 from "../assets/pepsi_img/15.jfif";
+
+import mohito from "../assets/mohito_img/mohito.jfif";
+
+import iceTea from "../assets/iceTea_img/iceTea.jfif";
+
+import sok from "../assets/sok_img/sok.jfif";
+
+import qoraChoy from "../assets/choy_img/qora.jfif";
+import kokChoy from "../assets/choy_img/kok.jfif";
+import limonChoy from "../assets/choy_img/limon.jfif";
+
+import sutKofe from "../assets/kofe_img/sutKofe.jfif";
+import kofe from "../assets/kofe_img/kofe.jfif";
+
+import gazSuv from "../assets/suv_img/gaz.jfif";
+import bezGaz from "../assets/suv_img/bezgaz.jfif";
+
+import ketchup from "../assets/sous_img/ketchup.jfif"
+import mayonez from "../assets/sous_img/mayonez.jfif"
+import sir from "../assets/sous_img/sir.jfif"
+import chili from "../assets/sous_img/hili.jfif"
 
 export const Lavash = [
   {
@@ -261,3 +292,164 @@ export const Hotdog = [
   },
 ];
 
+export const Snek = [
+  {
+    title: "Non",
+    desc: "Хлеб",
+    image: non,
+    price: 3000,
+  },
+  {
+    title: "Fri",
+    desc: "Фри",
+    image: fri,
+    price: 11000,
+  },
+  {
+    title: "Jaydari kartoshka",
+    desc: "Картофель по деревенски",
+    image: jaydari,
+    price: 12000,
+  },
+];
+
+export const Salat = [
+  {
+    title: "Mujskoy kapriz",
+    desc: "Копченная колбаса, индейка, казы, сыр, майонез.",
+    image: mujskoyKapriz,
+    price: 19500,
+  },
+  {
+    title: "Sezar",
+    desc: "Куринное филе, помидоры, айсберг, сыр, крутоны, чесночный соус.",
+    image: sezar,
+    price: 19000,
+  },
+];
+
+export const Pepsi = [
+  {
+    title: "Pepsi 0,4L",
+    desc: "Pepsi",
+    image: pepsi04,
+    price: 7000,
+  },
+  {
+    title: "Pepsi 0,5L",
+    desc: "Pepsi",
+    image: pepsi05,
+    price: 8000,
+  },
+  {
+    title: "Pepsi 1,5L",
+    desc: "Pepsi",
+    image: pepsi15,
+    price: 14000,
+  },
+];
+
+export const Mohito = [
+  {
+    title: "Mohito 0,7L",
+    desc: "Мохито 0.7L",
+    image: mohito,
+    price: 14000,
+  },
+];
+
+export const IceTea = [
+  {
+    title: "Ice Tea 0.7L",
+    desc: "Ice Tea 0.7L",
+    image: iceTea,
+    price: 14000,
+  },
+];
+
+export const Sok = [
+  {
+    title: 'Sok "Сочная Долина"',
+    desc: "Соки",
+    image: sok,
+    price: 13000,
+  },
+];
+
+export const choy = [
+  {
+    title: "Qora choy",
+    desc: "Чёрный чай",
+    image: qoraChoy,
+    price: 2000,
+  },
+  {
+    title: "Ko'k choy",
+    desc: "Зеленый чай",
+    image: kokChoy,
+    price: 2000,
+  },
+  {
+    title: "Limonli choy",
+    desc: "Чай с Лимоном",
+    image: limonChoy,
+    price: 5000,
+  },
+];
+
+export const Kofe = [
+  {
+    title: "Sutli qahva",
+    desc: "Sutli qahva",
+    image: sutKofe,
+    price: 7000,
+  },
+  {
+    title: "Qahva",
+    desc: "Qahva",
+    image: kofe,
+    price: 7000,
+  },
+];
+
+export const Suv = [
+  {
+    title: "Gazlangan suv 0,5L",
+    desc: "Вода с газом 0,5л",
+    image: gazSuv,
+    price: 2000,
+  },
+  {
+    title: "Gazlanmagan suv 0,5L",
+    desc: "Вода 0,5л",
+    image: bezGaz,
+    price: 2000,
+  },
+];
+
+export const Sous = [
+  {
+    title: "Ketchup",
+    desc: "Кетчуп",
+    image: ketchup,
+    price: 2000,
+  },
+  {
+    title: "Mayonez",
+    desc: "Майонез",
+    image: mayonez,
+    price: 2000,
+  },
+  {
+    title: "Pishloqli sous",
+    desc: "Сыр",
+    image: sir,
+    price: 2000,
+  },
+  {
+    title: "Chili sous",
+    desc: "Chili sous",
+    image: chili,
+    price: 2000,
+  },
+];
