@@ -1,36 +1,35 @@
 import React from "react";
-import { CardData } from "../data/CardData";
 import MyButton from "./UI/MyButton";
 import "../style/Content.css";
-
+import { CardData } from "../data/CardData";
 const Content = () => {
   return (
-    <div className="content">
+    <>
       {CardData.map((item) => (
-        <>
+        <div className="content">
           <h1 className="content_header" key={item.id}>
             {item.category}
           </h1>
           <div className="list">
-            {CardData.product.map((item) => (
-              <div key={item.id} className="card">
+            {item.product.map(({ id, title, image, desc, price }) => (
+              <div key={id} className="card">
                 <div className="card_image">
-                  <img src={item.image} alt={item.title} />
+                  <img src={image} alt={title} />
                 </div>
                 <div className="card_content">
-                  <h3>{item.title}</h3>
-                  <p>{item.desc}</p>
+                  <h3>{title}</h3>
+                  <p>{desc}</p>
                 </div>
                 <div className="card_btn">
-                  <b>{item.price}</b>
+                  <b>{price}</b>
                   <MyButton>Выбрат</MyButton>
                 </div>
               </div>
             ))}
           </div>
-        </>
+        </div>
       ))}
-    </div>
+    </>
   );
 };
 
