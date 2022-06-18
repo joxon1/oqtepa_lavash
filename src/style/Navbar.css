@@ -20,10 +20,13 @@
   justify-content: space-between;
   background: #fff;
 }
+.navbar_links {
+  background: none;
+}
 .navbar_link {
   text-decoration: none;
   padding: 0rem 1rem;
-  background: #fff;
+  background: none;
 }
 .navbar_link:hover {
   border-bottom: 2px solid red;
