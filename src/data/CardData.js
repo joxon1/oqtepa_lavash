@@ -73,7 +73,7 @@ import chili from "../assets/sous_img/hili.jfif";
 export const CardData = [
   {
     id: 1,
-    category: "Lavash",
+    category: "Lavashlar",
     product: [
       {
         id: 1,
@@ -128,7 +128,7 @@ export const CardData = [
   },
   {
     id: 2,
-    category: "Set",
+    category: "Setlar",
     product: [
       {
         id: 1,
@@ -182,7 +182,7 @@ export const CardData = [
   },
   {
     id: 4,
-    category: "Shirinlik",
+    category: "Shirinliklar",
     product: [
       {
         id: 1,
@@ -209,7 +209,7 @@ export const CardData = [
   },
   {
     id: 5,
-    category: "Pitsa",
+    category: "Pitsalar",
     product: [
       {
         id: 1,
@@ -270,7 +270,7 @@ export const CardData = [
   },
   {
     id: 7,
-    category: "Burger",
+    category: "Burgerlar",
     product: [
       {
         id: 1,
@@ -318,7 +318,7 @@ export const CardData = [
   },
   {
     id: 8,
-    category: "Hotdog",
+    category: "Hotdoglar",
     product: [
       {
         id: 1,
@@ -352,7 +352,7 @@ export const CardData = [
   },
   {
     id: 9,
-    category: "Snek",
+    category: "Sneklar",
     product: [
       {
         id: 1,
@@ -379,7 +379,7 @@ export const CardData = [
   },
   {
     id: 10,
-    category: "Salat",
+    category: "Salatlar",
     product: [
       {
         id: 1,
@@ -399,120 +399,104 @@ export const CardData = [
   },
   {
     id: 11,
-    category: "Ichimliklar",
+    category: "Ichimliklarlar",
     product: [
       {
-        pepsi: [
-          {
-            id: 1,
-            title: "Pepsi 0,4L",
-            desc: "Pepsi",
-            image: pepsi04,
-            price: 7000,
-          },
-          {
-            id: 2,
-            title: "Pepsi 0,5L",
-            desc: "Pepsi",
-            image: pepsi05,
-            price: 8000,
-          },
-          {
-            id: 3,
-            title: "Pepsi 1,5L",
-            desc: "Pepsi",
-            image: pepsi15,
-            price: 14000,
-          },
-        ],
-        Mohito: [
-          {
-            id: 1,
-            title: "Mohito 0,7L",
-            desc: "Мохито 0.7L",
-            image: mohito,
-            price: 14000,
-          },
-        ],
-        IceTea: [
-          {
-            id: 1,
-            title: "Ice Tea 0.7L",
-            desc: "Ice Tea 0.7L",
-            image: iceTea,
-            price: 14000,
-          },
-        ],
-        Sok: [
-          {
-            id: 1,
-            title: 'Sok "Сочная Долина"',
-            desc: "Соки",
-            image: sok,
-            price: 13000,
-          },
-        ],
-        Choy: [
-          {
-            id: 1,
-            title: "Qora choy",
-            desc: "Чёрный чай",
-            image: qoraChoy,
-            price: 2000,
-          },
-          {
-            id: 2,
-            title: "Ko'k choy",
-            desc: "Зеленый чай",
-            image: kokChoy,
-            price: 2000,
-          },
-          {
-            id: 3,
-            title: "Limonli choy",
-            desc: "Чай с Лимоном",
-            image: limonChoy,
-            price: 5000,
-          },
-        ],
-        Kofe: [
-          {
-            id: 1,
-            title: "Sutli qahva",
-            desc: "Sutli qahva",
-            image: sutKofe,
-            price: 7000,
-          },
-          {
-            id: 2,
-            title: "Qahva",
-            desc: "Qahva",
-            image: kofe,
-            price: 7000,
-          },
-        ],
-        Suv: [
-          {
-            id: 1,
-            title: "Gazlangan suv 0,5L",
-            desc: "Вода с газом 0,5л",
-            image: gazSuv,
-            price: 2000,
-          },
-          {
-            id: 2,
-            title: "Gazlanmagan suv 0,5L",
-            desc: "Вода 0,5л",
-            image: bezGaz,
-            price: 2000,
-          },
-        ],
+        id: 1,
+        title: "Pepsi 0,4L",
+        desc: "Pepsi",
+        image: pepsi04,
+        price: 7000,
+      },
+      {
+        id: 2,
+        title: "Pepsi 0,5L",
+        desc: "Pepsi",
+        image: pepsi05,
+        price: 8000,
+      },
+      {
+        id: 3,
+        title: "Pepsi 1,5L",
+        desc: "Pepsi",
+        image: pepsi15,
+        price: 14000,
+      },
+      {
+        id: 4,
+        title: "Mohito 0,7L",
+        desc: "Мохито 0.7L",
+        image: mohito,
+        price: 14000,
+      },
+      {
+        id: 5,
+        title: "Ice Tea 0.7L",
+        desc: "Ice Tea 0.7L",
+        image: iceTea,
+        price: 14000,
+      },
+      {
+        id: 6,
+        title: 'Sok "Сочная Долина"',
+        desc: "Соки",
+        image: sok,
+        price: 13000,
+      },
+      {
+        id: 7,
+        title: "Qora choy",
+        desc: "Чёрный чай",
+        image: qoraChoy,
+        price: 2000,
+      },
+      {
+        id: 8,
+        title: "Ko'k choy",
+        desc: "Зеленый чай",
+        image: kokChoy,
+        price: 2000,
+      },
+      {
+        id: 9,
+        title: "Limonli choy",
+        desc: "Чай с Лимоном",
+        image: limonChoy,
+        price: 5000,
+      },
+      {
+        id: 10,
+        title: "Sutli qahva",
+        desc: "Sutli qahva",
+        image: sutKofe,
+        price: 7000,
+      },
+      {
+        id: 11,
+        title: "Qahva",
+        desc: "Qahva",
+        image: kofe,
+        price: 7000,
+      },
+      {
+        id: 12,
+        title: "Gazlangan suv 0,5L",
+        desc: "Вода с газом 0,5л",
+        image: gazSuv,
+        price: 2000,
+      },
+      {
+        id: 13,
+        title: "Gazlanmagan suv 0,5L",
+        desc: "Вода 0,5л",
+        image: bezGaz,
+        price: 2000,
       },
     ],
   },
   {
     id: 13,
-    category: "Sous",
+    category: "Souslar",
     product: [
       {
         id: 1,

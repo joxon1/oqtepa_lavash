@@ -21,7 +21,7 @@ const Content = () => {
                   <p>{desc}</p>
                 </div>
                 <div className="card_btn">
-                  <b>{price}</b>
+                  <b>{price} сум</b>
                   <MyButton>Выбрат</MyButton>
                 </div>
               </div>
