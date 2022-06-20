@@ -4,6 +4,7 @@ import { NavbarData } from "../data/NavbarData";
 import { BsTelegram, BsInstagram, BsFacebook } from "react-icons/bs";
 import "../style/Footer.css";
 import logo from "../assets/logo.jpg";
+import logoRJ from "../assets/logoRJ.jpg";
 
 const Footer = () => {
   return (
@@ -41,7 +42,10 @@ const Footer = () => {
         <p>
           2017-{new Date().getFullYear()} OOO «Oq-Tepa Lavash», официальный сайт{" "}
         </p>
-        <p>Project by Joxongir</p>
+        <div className="logoRJ_container">
+          <p>Project by Joxongir</p>
+          <img className="logoRJ" src={logoRJ} alt="Road for Junior" />{" "}
+        </div>
       </div>
     </div>
   );
