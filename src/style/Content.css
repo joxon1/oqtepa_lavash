@@ -49,16 +49,19 @@
   margin-bottom: 3rem;
 }
 .card_btn {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   margin-bottom: 2rem;
+  padding: 0.5rem;
   background: none;
 }
 
 .card_btn b {
   background: none;
   padding-right: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card:hover {
