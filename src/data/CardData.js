@@ -270,7 +270,7 @@ export const CardData = [
   },
   {
     id: 7,
-    category: "Burgerlar",
+    category: "Burger va donerlar",
     product: [
       {
         id: 24,
@@ -495,7 +495,7 @@ export const CardData = [
     ],
   },
   {
-    id: 13,
+    id: 12,
     category: "Souslar",
     product: [
       {
