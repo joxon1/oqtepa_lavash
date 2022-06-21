@@ -1,8 +1,10 @@
 import React from "react";
-import MyButton from "./UI/MyButton";
 import "../style/Content.css";
 import { CardData } from "../data/CardData";
+import { useCart } from "react-use-cart";
+import CardItem from "./CardItem";
 const Content = () => {
+  const { addItem } = useCart();
   return (
     <>
       {CardData.map((item) => (
@@ -11,21 +13,11 @@ const Content = () => {
             {item.category}
           </h1>
           <div className="list">
-            {item.product.map(({ id, title, image, desc, price }) => (
-              <div key={id} className="card">
-                <div className="card_image">
-                  <img src={image} alt={title} />
-                </div>
-                <div className="card_content">
-                  <h3>{title}</h3>
-                  <p>{desc}</p>
-                </div>
-                <div className="card_btn">
-                  <b>{price} сум</b>
-                  <MyButton>Выбрат</MyButton>
-                </div>
-              </div>
-            ))}
+            {CardData.map((item) => {
+              return item.product.map((product) => {
+                return <CardItem key={product.id} {...product} product={product} />;
+              });
+            })}
           </div>
         </div>
       ))}

@@ -1,0 +1,15 @@
+.basketIcon {
+  position: fixed;
+  z-index: 100;
+  right: 10px;
+  bottom: 10px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #fff;
+  background: #ef5350;
+}
