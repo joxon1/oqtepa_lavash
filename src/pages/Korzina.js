@@ -72,8 +72,8 @@ const Korzina = () => {
               );
             })}
             <div className="korzina_footer">
-              <MyButton style={{height:"3rem" }}>Общая сумма : {cartTotal} сум</MyButton>
-              <MyButton style={{height:"3rem",background:"green" }}>Заказать</MyButton>
+              <MyButton style={{height:"5rem" }}>Общая сумма : {cartTotal} сум</MyButton>
+              <MyButton style={{height:"5rem",background:"green" }}>Заказать</MyButton>
             </div>
           </div>
         </div>
