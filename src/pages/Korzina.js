@@ -72,7 +72,7 @@ const Korzina = () => {
               );
             })}
             <div className="korzina_footer">
-              <MyButton>Total Price : {cartTotal} сум</MyButton>
+              <MyButton>Общая сумма : {cartTotal} сум</MyButton>
             </div>
           </div>
         </div>
