@@ -3,7 +3,7 @@ import { GrClose } from "react-icons/gr";
 import MyButton from "../components/UI/MyButton";
 import "../style/Korzina.css";
 import { useCart } from "react-use-cart";
-import { FaShoppingCart } from "react-icons/fa";
+import { FaShoppingCart, FaMinus, FaPlus, FaTrash } from "react-icons/fa";
 import { useState } from "react";
 const Korzina = () => {
   const [basket, setBasket] = useState(false);
@@ -13,11 +13,9 @@ const Korzina = () => {
     isEmpty,
     totalUniqueItems,
     items,
-    totalItems,
     cartTotal,
     updateItemQuantity,
     removeItem,
-    emptyCart,
   } = useCart();
 
   return (
@@ -33,54 +31,49 @@ const Korzina = () => {
             <GrClose className="korzina_header_icon" onClick={showBasket} />
           </div>
           <div className="korzina_content">
-            <section>
-              <div>
-                <table>
-                  <tbody>
-                    {items.map((item, index) => {
-                      return (
-                        <div key={index} className="basket_container">
-                          <div>
-                            <img
-                              src={item.image}
-                              alt={item.title}
-                              style={{ height: "4rem" }}
-                            />
-                          </div>
-                          <div className="basket_text">
-                            <p>{item.title}</p>
-                            <b style={{ color: "red" }}>{item.price}</b>
-                          </div>
-                          <div className="basket_btn_container">
-                            <button
-                              onClick={() =>
-                                updateItemQuantity(item.id, item.quantity - 1)
-                              }
-                            >
-                              -
-                            </button>
-                            <p>{item.quantity}</p>
-                            <button
-                              onClick={() =>
-                                updateItemQuantity(item.id, item.quantity + 1)
-                              }
-                            >
-                              +
-                            </button>
-                            <button onClick={() => removeItem(item.id)}>
-                              Remove Item
-                            </button>
-                          </div>
-                        </div>
-                      );
-                    })}
-                  </tbody>
-                </table>
-              </div>
-            </section>
-          </div>
-          <div className="korzina_footer">
-            <MyButton>Total Price : {totalItems} сум</MyButton>
+            {items.map((item, index) => {
+              return (
+                <div key={index} className="basket_container">
+                  <div style={{ background: "none" }}>
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      style={{ height: "4rem", background: "none" }}
+                    />
+                  </div>
+                  <div className="basket_text">
+                    <p>{item.title}</p>
+                    <b style={{ color: "red", background: "none" }}>
+                      {item.price}
+                    </b>
+                  </div>
+                  <div className="basket_btn_container">
+                    <FaMinus
+                      style={{ background: "none", cursor: "pointer" }}
+                      onClick={() =>
+                        updateItemQuantity(item.id, item.quantity - 1)
+                      }
+                    />
+                    <p className="basket_total_item">{item.quantity}</p>
+                    <FaPlus
+                      style={{ background: "none", cursor: "pointer" }}
+                      onClick={() =>
+                        updateItemQuantity(item.id, item.quantity + 1)
+                      }
+                    />
+                  </div>
+                  <div
+                    className="basket_trash"
+                    onClick={() => removeItem(item.id)}
+                  >
+                    <FaTrash style={{ background: "none" }} />
+                  </div>
+                </div>
+              );
+            })}
+            <div className="korzina_footer">
+              <MyButton>Total Price : {cartTotal} сум</MyButton>
+            </div>
           </div>
         </div>
       </div>

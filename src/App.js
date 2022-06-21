@@ -10,14 +10,14 @@ import Korzina from "./pages/Korzina";
 const App = () => {
   return (
     <>
-      {/* <Navbar /> */}
-      {/* <Menu /> */}
-      {/* <Slider /> */}
       <CartProvider>
+        <Navbar />
+        <Menu />
+        <Slider />
         <Content />
         <Korzina />
+        <Footer />
       </CartProvider>
-      {/* <Footer /> */}
     </>
   );
 };
