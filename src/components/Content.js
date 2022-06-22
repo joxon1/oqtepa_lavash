@@ -23,10 +23,6 @@ const Content = ({ refs }) => {
           </div>
         );
       })}
-      <div className="scroll_to_top">
-        <h4>Наверх</h4>
-        <ImArrowUp onClick={() => window.scrollTo(0, 0)} />
-      </div>
     </>
   );
 };

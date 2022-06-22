@@ -20,7 +20,7 @@ const Navbar = () => {
       <div className="navbar_header">
         <div className="navbar_links">
           {NavbarData.map((item, index) => (
-            <Link key={index} to="/" className="navbar_link">
+            <Link key={index} to={item.path} className="navbar_link">
               {item.title}
             </Link>
           ))}

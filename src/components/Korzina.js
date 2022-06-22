@@ -1,6 +1,6 @@
 import React from "react";
 import { GrClose } from "react-icons/gr";
-import MyButton from "../components/UI/MyButton";
+import MyButton from "./UI/MyButton";
 import "../style/Korzina.css";
 import { useCart } from "react-use-cart";
 import { FaShoppingCart, FaMinus, FaPlus, FaTrash } from "react-icons/fa";
@@ -9,14 +9,8 @@ const Korzina = () => {
   const [basket, setBasket] = useState(false);
   const showBasket = () => setBasket(!basket);
 
-  const {
-    isEmpty,
-    totalUniqueItems,
-    items,
-    cartTotal,
-    updateItemQuantity,
-    removeItem,
-  } = useCart();
+  const { totalUniqueItems, items, cartTotal, updateItemQuantity, removeItem } =
+    useCart();
 
   return (
     <>
@@ -72,8 +66,12 @@ const Korzina = () => {
               );
             })}
             <div className="korzina_footer">
-              <MyButton style={{height:"5rem" }}>Общая сумма : {cartTotal} сум</MyButton>
-              <MyButton style={{height:"5rem",background:"green" }}>Заказать</MyButton>
+              <MyButton style={{ height: "5rem" }}>
+                Общая сумма : {cartTotal} сум
+              </MyButton>
+              <MyButton style={{ height: "5rem", background: "green" }}>
+                Заказать
+              </MyButton>
             </div>
           </div>
         </div>

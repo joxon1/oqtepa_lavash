@@ -5,6 +5,7 @@ import { BsTelegram, BsInstagram, BsFacebook } from "react-icons/bs";
 import "../style/Footer.css";
 import logo from "../assets/logo.jpg";
 import logoRJ from "../assets/logoRJ.jpg";
+import { ImArrowUp } from "react-icons/im";
 
 const Footer = () => {
   return (
@@ -46,6 +47,10 @@ const Footer = () => {
           <p>Project by Joxongir</p>
           <img className="logoRJ" src={logoRJ} alt="Road for Junior" />{" "}
         </div>
+      </div>
+      <div className="scroll_to_top">
+        <h4>Наверх</h4>
+        <ImArrowUp onClick={() => window.scrollTo(0, 0)} />
       </div>
     </div>
   );

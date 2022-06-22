@@ -1,36 +1,21 @@
-import React, { createRef } from "react";
+import React from "react";
 import Navbar from "./components/Navbar";
-import Menu from "./components/Menu";
-import Slider from "./components/Slider";
-import Content from "./components/Content";
 import Footer from "./components/Footer";
-import { CartProvider } from "react-use-cart";
-import Korzina from "./pages/Korzina";
-import { CardData } from "./data/CardData";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+import Home from "./pages/Home.js";
+import Filial from "./pages/Filial.js";
 
 const App = () => {
-  const refs = CardData.reduce((acc, value) => {
-    acc[value.id] = createRef();
-    return acc;
-  }, {});
-
-  const handleClick = (id) =>
-    refs[id].current.scrollIntoView({
-      behiver: "smooth",
-      block: "start",
-    });
-  console.log(refs);
   return (
-    <>
-      <CartProvider>
-        <Navbar />
-        <Menu handleClick={handleClick} />
-        <Slider />
-        <Content refs={refs} />
-        <Korzina />
-        <Footer />
-      </CartProvider>
-    </>
+    <Router>
+      <Navbar />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/filial" component={Filial} />
+      </Switch>
+      <Footer />
+    </Router>
   );
 };
 
