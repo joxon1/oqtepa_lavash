@@ -1,3 +1,43 @@
 .filial_container {
   min-height: calc(100vh - 70px - 440px);
 }
+.filial_card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: #fff;
+  margin: 1rem 2rem;
+  padding: 1rem;
+  box-shadow: 0 1px 2px 0 rgb(142 141 139 / 50%);
+}
+.filial_time {
+  flex-direction: column;
+}
+.filial_time h4,
+.filial_time p {
+  background: none;
+}
+.filial_card_item {
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  text-align: center;
+}
+.filial_card_item:last-child {
+  justify-content: flex-end;
+}
+.filial_icon {
+  font-size: 1.5rem;
+  background: none;
+}
+@media screen and (max-width: 567px) {
+  .filial_card {
+    grid-template-columns: none;
+    grid-template-rows: repeat(1fr);
+  }
+
+  .filial_card_item:last-child {
+    display: none;
+  }
+}

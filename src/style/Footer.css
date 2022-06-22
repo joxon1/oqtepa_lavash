@@ -8,7 +8,7 @@
   color: rgb(134, 134, 134);
 }
 .footer_container hr,
-p {
+.footer_container p {
   margin-bottom: 0.5rem;
   background: none;
 }
@@ -103,11 +103,11 @@ p {
   .scroll_to_top {
     width: 3rem;
     height: 3rem;
-    bottom:12rem;
+    bottom: 12rem;
     left: 0;
     font-size: 2rem;
   }
-  .scroll_to_top h4{
+  .scroll_to_top h4 {
     font-size: 0.5rem;
   }
 }
