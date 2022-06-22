@@ -8,7 +8,7 @@ export const NavbarData = [
     title: "Филиалы",
   },
   {
-    path:"/info",
+    path:"/about",
     title: "О нас",
   },
   {
