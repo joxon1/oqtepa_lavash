@@ -31,6 +31,16 @@
   font-size: 1.5rem;
   background: none;
 }
+.filial_maps {
+  padding: 2rem;
+  width: 100vw;
+  height: 100vh;
+}
+.filial_maps iframe {
+  width: 100%;
+  height: 100%;
+}
+
 @media screen and (max-width: 567px) {
   .filial_card {
     grid-template-columns: none;
@@ -39,5 +49,10 @@
 
   .filial_card_item:last-child {
     display: none;
+  }
+  .filial_maps {
+    padding: 2rem;
+    width: 100vw;
+    height: 50vh;
   }
 }
