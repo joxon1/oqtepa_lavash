@@ -1,0 +1,10 @@
+.contact_container {
+  min-height: calc(100vh - 70px - 440px);
+  width: 100%;
+  padding: 0 10rem;
+}
+@media screen and (max-width:768px) {
+  .contact_container{
+    padding: 0 2rem;
+  }
+}

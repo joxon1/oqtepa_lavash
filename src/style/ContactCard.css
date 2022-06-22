@@ -1,0 +1,33 @@
+.contact_card {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  background: #fff;
+  margin-bottom: 1rem;
+}
+.contact_card p,
+.contact_card b,
+.contact_card i,
+.contact_card h3 {
+  padding: 1rem 0;
+  background: none;
+}
+
+.contact_wrapper {
+  background: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.contact_number_card {
+  width: 100%;
+  background: none;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e6e6e6;
+}
+@media screen and (max-width:768px) {
+  .contact_number_card{
+    flex-direction: column;
+  }
+}
