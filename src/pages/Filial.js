@@ -1,10 +1,11 @@
 import React from "react";
+import "../style/Filial.css";
 
 const Filial = () => {
   return (
-    <>
-      asaas
-    </>
+    <div className="filial_container">
+      
+    </div>
   );
 };
 
