@@ -59,6 +59,7 @@
 
 .mobile_menu {
   background: none;
+  color: #000;
 }
 @media screen and (max-width: 792px) {
   .mobile_icon {
