@@ -1,28 +1,35 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.jpg";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "../style/Navbar.css";
 import MyButton from "./UI/MyButton";
+import { IconContext } from "react-icons";
 
 const Navbar = () => {
   const [bars, setBars] = useState(false);
-  const showBars = () => setBars(!bars);
+  const showBars = (e) => {
+    setBars(!bars);
+  };
 
+  useEffect(() => {}, []);
   return (
     <nav className="navbar_header">
       <div className="mobile_icon" onClick={showBars}>
-        {bars ? <FaTimes /> : <FaBars />} 
+        {bars ? <FaTimes /> : <FaBars />}
       </div>
       <Link to="/" className="navbar_logo">
         <img src={logo} alt="logo" />
       </Link>
-      <nav className={bars ? "mobile_menu" : "nav_links"}>
-        <Link className="nav_link" to="/">
+      <nav
+        className={bars ? "mobile_menu" : "nav_links"}
+        onClick={() => showBars(false)}
+      >
+        <Link className="nav_link" to="/" >
           Главный
         </Link>
-        <Link className="nav_link" to="/filial">
+        <Link className="nav_link" to="/filial" type="submit">
           Филиалы
         </Link>
         <Link className="nav_link" to="/about">
