@@ -1,0 +1,26 @@
+.carusel_container {
+  width: 100%;
+  height: 100%;
+}
+.carusel_window {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.carusel_all_pages_container {
+  height: 100%;
+  display: flex;
+}
+.arrow {
+  cursor: pointer;
+}
+.arrow_left {
+  position: absolute;
+  left: 2rem;
+}
+.arrow_right {
+  position: absolute;
+  right: 2rem;
+}

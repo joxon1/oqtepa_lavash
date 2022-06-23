@@ -1,7 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
 import { SliderData } from "../data/SliderData";
 import "../style/Slider.css";
-import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+
 const Slider = () => {
   const [current, setCurrent] = useState(0);
   const length = SliderData.length;
@@ -37,21 +38,22 @@ const Slider = () => {
   }
   return (
     <div className="slider_container">
-      <div className="slider_wrapper">
-        {SliderData.map((slide, index) => (
-          <div className="slide" key={index}>
-            {index === current && (
+      {SliderData.map((slide, index) => (
+        <div className="slide" key={index}>
+          {index === current && (
+            <div className="slider_card">
+              <FaChevronLeft className="arrow arrow_left" onClick={prevSlide} />
               <div className="slider_img_container">
                 <img className="slider_img" src={slide.image} alt="photo" />
               </div>
-            )}
-          </div>
-        ))}
-      </div>
-      <div className="btn_container">
-        <MdKeyboardArrowLeft className="arrow_btn_left" onClick={prevSlide} />
-        <MdKeyboardArrowRight className="arrow_btn_right" onClick={nextSlide} />
-      </div>
+              <FaChevronRight
+                className="arrow arrow_right"
+                onClick={nextSlide}
+              />
+            </div>
+          )}
+        </div>
+      ))}
     </div>
   );
 };

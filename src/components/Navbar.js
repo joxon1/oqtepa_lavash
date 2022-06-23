@@ -13,11 +13,14 @@ const Navbar = () => {
     setBars(!bars);
   };
 
-  useEffect(() => {}, []);
   return (
     <nav className="navbar_header">
       <div className="mobile_icon" onClick={showBars}>
-        {bars ? <FaTimes /> : <FaBars />}
+        {bars ? (
+          <FaTimes className="mob_icon" />
+        ) : (
+          <FaBars className="mob_icon" />
+        )}
       </div>
       <Link to="/" className="navbar_logo">
         <img src={logo} alt="logo" />
@@ -26,7 +29,7 @@ const Navbar = () => {
         className={bars ? "mobile_menu" : "nav_links"}
         onClick={() => showBars(false)}
       >
-        <Link className="nav_link" to="/" >
+        <Link className="nav_link" to="/">
           Главный
         </Link>
         <Link className="nav_link" to="/filial" type="submit">

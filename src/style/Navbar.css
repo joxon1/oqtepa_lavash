@@ -41,7 +41,6 @@
 }
 .nav_link:hover {
   border-bottom: 2px solid red;
-  
 }
 .nav_right {
   padding: 0 1rem;
@@ -58,7 +57,9 @@
   align-items: center;
 }
 
-
+.mobile_menu {
+  background: none;
+}
 @media screen and (max-width: 792px) {
   .mobile_icon {
     display: block;
@@ -73,6 +74,9 @@
   .nav_right {
     display: none;
   }
+  .mob_icon {
+    background: none;
+  }
   .mobile_menu {
     position: fixed;
     top: 0;
@@ -85,7 +89,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    z-index:50;
+    z-index: 50;
   }
   /* .mobile_menu:focus{
     left: -100%;
