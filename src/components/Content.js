@@ -2,7 +2,6 @@ import React from "react";
 import "../style/Content.css";
 import { CardData } from "../data/CardData";
 import CardItem from "./CardItem";
-import { ImArrowUp } from "react-icons/im";
 
 const Content = ({ refs }) => {
   return (
@@ -14,10 +13,8 @@ const Content = ({ refs }) => {
               {item.category}
             </h1>
             <div className="list">
-              {item.product.map((product) => {
-                return (
-                  <CardItem key={product.id} {...product} product={product} />
-                );
+              {item.product.map((product, index) => {
+                return <CardItem key={index} {...product} product={product} />;
               })}
             </div>
           </div>

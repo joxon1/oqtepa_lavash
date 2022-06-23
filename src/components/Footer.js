@@ -14,21 +14,23 @@ const Footer = () => {
         <div className="footer_links">
           <img src={logo} alt="" />
           {NavbarData.map((item) => (
-            <div className="links_div">
-              <Link className="footer_link">{item.title}</Link>
+            <div className="links_div" key={item.id}>
+              <Link to="/" className="footer_link">
+                {item.title}
+              </Link>
             </div>
           ))}
         </div>
         <div className="footer_network">
           <p>Присоединяйтесь к нам</p>
           <div className="footer_network_links">
-            <Link className="network">
+            <Link to="/" className="network">
               <BsFacebook className="network" />
             </Link>
-            <Link className="network">
+            <Link to="/" className="network">
               <BsInstagram className="network" />
             </Link>
-            <Link className="network">
+            <Link to="/" className="network">
               <BsTelegram className="network" />
             </Link>
           </div>

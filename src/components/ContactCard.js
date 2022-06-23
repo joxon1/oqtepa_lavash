@@ -2,7 +2,7 @@ import React from "react";
 import "../style/ContactCard.css";
 const ContactCard = (props) => {
   return (
-    <div className="contact_card">
+    <div key={props.id} className="contact_card">
       <div className="contact_wrapper">
         <h3>{props.title}</h3>
         <p>{props.text}</p>

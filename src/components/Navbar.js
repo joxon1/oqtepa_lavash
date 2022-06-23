@@ -1,39 +1,70 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.jpg";
-import { NavbarData } from "../data/NavbarData";
 import { BsFillTelephoneFill } from "react-icons/bs";
+import { FaBars, FaTimes } from "react-icons/fa";
 import "../style/Navbar.css";
 import MyButton from "./UI/MyButton";
 
 const Navbar = () => {
+  const [bars, setBars] = useState(false);
+  const showBars = () => setBars(!bars);
+
   return (
-    <nav className="navbar">
-      <div className="navbar_toggle" id="mobile-menu">
-        <span className="bar"></span>
-        <span className="bar"></span>
-        <span className="bar"></span>
+    <nav className="navbar_header">
+      <div className="mobile_icon" onClick={showBars}>
+        {bars ? <FaTimes /> : <FaBars />} 
       </div>
-      <Link to="/" className="navbar_logo" id="logo_border">
-        <img src={logo} alt="Oq-Tepa Lavash" className="navbar_logo" />
+      <Link to="/" className="navbar_logo">
+        <img src={logo} alt="logo" />
       </Link>
-      <div className="navbar_header">
-        <div className="navbar_links">
-          {NavbarData.map((item, index) => (
-            <Link key={index} to={item.path} className="navbar_link">
-              {item.title}
-            </Link>
-          ))}
-        </div>
-        <div className="navbar_number">
-          <BsFillTelephoneFill style={{ background: "#fff" }} />
+      <nav className={bars ? "mobile_menu" : "nav_links"}>
+        <Link className="nav_link" to="/">
+          Главный
+        </Link>
+        <Link className="nav_link" to="/filial">
+          Филиалы
+        </Link>
+        <Link className="nav_link" to="/about">
+          О нас
+        </Link>
+        <Link className="nav_link" to="/contact">
+          Контакты
+        </Link>
+      </nav>
+      <div className="nav_right">
+        <div className="nav_number">
+          <BsFillTelephoneFill style={{ background: "none" }} />
           +998(78)150-00-30
         </div>
-      </div>
-      <div className="navbar_btn">
-        <MyButton>Войти</MyButton>
+        <div className="navbar_btn">
+          <MyButton>Войти</MyButton>
+        </div>
       </div>
     </nav>
+
+    // <nav className="navbar">
+    //   <Link to="/" className="navbar_logo">
+    //     <img src={logo} alt="Oq-Tepa Lavash" className="navbar_logo" />
+    //   </Link>
+    //   <div className="navbar_header">
+    //     <div className={bars ? "navbar_mobile_menu" : "navbar_links"}>
+    //       {NavbarData.map((item, index) => (
+    //         <Link key={index} to={item.path} className="navbar_link">
+    //           {item.title}
+    //         </Link>
+    //       ))}
+    //     </div>
+    //     <div className="navbar_number">
+    //       <BsFillTelephoneFill style={{ background: "#fff" }} />
+    //       +998(78)150-00-30
+    //     </div>
+    //   </div>
+    //   <div className="navbar_btn">
+    //     <MyButton>Войти</MyButton>
+    //   </div>
+    //   <div className="navbar_mobile">{bars ? <GrClose /> : <FaBars />}</div>
+    // </nav>
   );
 };
 
