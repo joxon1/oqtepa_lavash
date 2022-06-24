@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/oqtepa_lavash/static/css/main.8ab6fffe.css",
-    "main.js": "/oqtepa_lavash/static/js/main.585dc027.js",
+    "main.js": "/oqtepa_lavash/static/js/main.1313c5fd.js",
     "static/media/dostlarSeti.jfif": "/oqtepa_lavash/static/media/dostlarSeti.6ee889097755514f0adc.jfif",
     "static/media/muxabbatSet.jfif": "/oqtepa_lavash/static/media/muxabbatSet.76847ba530245df987b9.jfif",
     "static/media/klassikSet.jfif": "/oqtepa_lavash/static/media/klassikSet.420d056d5c1da2657fcb.jfif",
@@ -64,10 +64,10 @@
     "static/media/2.jpg": "/oqtepa_lavash/static/media/2.383fdb7088d8d60f36d7.jpg",
     "index.html": "/oqtepa_lavash/index.html",
     "main.8ab6fffe.css.map": "/oqtepa_lavash/static/css/main.8ab6fffe.css.map",
-    "main.585dc027.js.map": "/oqtepa_lavash/static/js/main.585dc027.js.map"
+    "main.1313c5fd.js.map": "/oqtepa_lavash/static/js/main.1313c5fd.js.map"
   },
   "entrypoints": [
     "static/css/main.8ab6fffe.css",
-    "static/js/main.585dc027.js"
+    "static/js/main.1313c5fd.js"
   ]
 }
